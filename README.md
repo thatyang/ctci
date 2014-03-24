@@ -1,2 +1,2 @@
-Python solutions for Crack the Coding Interview
+Python solutions for Cracking the Coding Interview
 @thatyang
