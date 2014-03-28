@@ -1,4 +1,6 @@
 # implement a function that reverses a string
+# more of a space complexity
+
 
 #Strings are immutable so each concat creates a new presentation
 def rev1(astr):
@@ -6,6 +8,8 @@ def rev1(astr):
     for index in range(len(astr) - 1, -1, -1):
         nstr += astr[index]
     return nstr
+
+
 #Use list, does not create new presentation
 def rev2(astr):
     nstr = []
@@ -14,8 +18,10 @@ def rev2(astr):
 
     return ('').join(nstr)
 
+#faster as list comprehension is optimized in Python.
 def rev3(astr):
     return ('').join([astr[index] for index in range(len(astr) - 1, -1, -1)])
+
 
 def rev4(astr):
     if astr != '':
@@ -28,4 +34,3 @@ print(rev1(astr))
 print(rev2(astr))
 print(rev3(astr))
 print(rev4(astr))
-
